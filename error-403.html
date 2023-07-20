@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="theme-color" content="white" />
+    <!-- <meta name="description" content="요즘 대학생들의 미팅·소개팅, 연픽" /> -->
+    <meta
+      name="application-name"
+      content="연픽 | 요즘 대학생들의 미팅·소개팅, 연픽"
+    />
+    <meta
+      name="msapplication-tooltip"
+      content="연픽 | 요즘 대학생들의 미팅·소개팅, 연픽"
+    />
+
+    <!-- 오픈그래프 -->
+    <meta content="연픽" property="og:title" />
+    <meta property="og:type" content="website" />
+    <meta content="https://yeonpick.kr" property="og:url" />
+    <meta content="./opengraph.png" property="og:image" />
+    <meta
+      content="요즘 대학생들의 미팅·소개팅, 연픽"
+      property="og:description"
+    />
+
+    <!-- 검색 키워드 -->
+    <meta
+      name="keywords"
+      content="대학 미팅, 대학생 미팅, 소개팅앱 후기, 대학 소개팅, 대학교 소개팅"
+    />
+    <!-- content="연픽, 미팅, 소개팅, 연세대, yeonpick, 연픽 후기, 연픽 연세대, 연픽 매칭, 연픽 소개팅 후기, 연픽 미팅 후기, 에브리타임, 에타, 대학 미팅" -->
+
+    <!-- 확대 방지 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script>
+      Kakao.init("ebd5702ddf412fc76841a7377580b4f2");
+    </script>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- 네이버 검색 -->
+    <meta
+      name="naver-site-verification"
+      content="95c3337fb0cfe6301eee552153a337ab84aabab7"
+    />
+    <!-- 구글 검색 -->
+    <meta
+      name="google-site-verification"
+      content="k2B86dOI0_KQpCsEive2IEOBc7p4gfAqx9O8bgHrlAA"
+    />
+    <title>연픽 | 요즘 대학생들의 연애</title>
+    <meta
+      name="description"
+      content="요즘 대학생들의 연애 플랫폼, 연픽이에요. 28,582명의 대학생들이 신청했어요!"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WND7894");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: "SUIT", sans-serif;
+    }
+  </style>
+  <body>
+    <div
+      style="
+        background-color: #edf2f7;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div
+        style="
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 252px;
+        "
+      >
+        <img
+          src="./403.png"
+          style="width: 95.4px; height: 109px"
+          alt="403ERROR"
+        />
+        <p
+          style="
+            margin-top: 38px;
+            text-align: center;
+            color: #455268;
+            font-size: 15px;
+            font-weight: 700;
+            font-size: normal;
+            line-height: 140%;
+          "
+        >
+          네트워크 연결상태가 좋지 않아요<br />잠시 후 다시 시도해주세요
+        </p>
+      </div>
+      <div
+        style="
+          position: fixed;
+          bottom: 33px;
+          border-radius: 37px;
+          width: 310px;
+          height: 56px;
+          background-color: #8732f4;
+        "
+        onclick="refreshPage()"
+      >
+        <p
+          style="
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+          "
+        >
+          다시 시도하기
+        </p>
+      </div>
+    </div>
+    <script>
+      function refreshPage() {
+        window.location.reload();
+      }
+    </script>
+  </body>
+</html>
